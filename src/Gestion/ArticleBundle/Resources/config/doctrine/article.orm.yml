@@ -1,0 +1,25 @@
+Gestion\ArticleBundle\Entity\article:
+    type: entity
+    table: null
+    repositoryClass: Gestion\ArticleBundle\Repository\articleRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        ref:
+            type: string
+            length: 255
+            unique: true
+        nom:
+            type: string
+            length: 255
+        type:
+            type: string
+            length: 255
+        genre:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

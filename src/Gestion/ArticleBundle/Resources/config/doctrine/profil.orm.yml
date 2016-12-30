@@ -1,0 +1,15 @@
+Gestion\ArticleBundle\Entity\profil:
+    type: entity
+    table: null
+    repositoryClass: Gestion\ArticleBundle\Repository\profilRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

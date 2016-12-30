@@ -1,0 +1,32 @@
+Gestion\ArticleBundle\Entity\user:
+    type: entity
+    table: null
+    repositoryClass: Gestion\ArticleBundle\Repository\userRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        prenom:
+            type: string
+            length: 255
+        mail:
+            type: string
+            length: 255
+            unique: true
+        mdp:
+            type: string
+            length: 255
+            unique: true
+        sexe:
+            type: string
+            length: 255
+        profil:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

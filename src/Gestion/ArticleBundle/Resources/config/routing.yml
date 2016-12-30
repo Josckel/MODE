@@ -1,0 +1,11 @@
+article_article:
+    resource: "@ArticleBundle/Resources/config/routing/article.yml"
+    prefix:   /article
+
+article_user:
+    resource: "@ArticleBundle/Resources/config/routing/user.yml"
+    prefix:   /user
+
+article_homepage:
+    path:     /
+    defaults: { _controller: ArticleBundle:Default:index }
